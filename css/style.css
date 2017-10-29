@@ -1,0 +1,217 @@
+/* Table of Contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- General Content
+- Typography
+- Header & Navigation
+- Images & Media
+- Footer
+- Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* General Content
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.main { padding: 3% 0; }
+.row { padding: 2% 0; } /* top and bottom, left and right */
+.grey { background: #fff; }
+header.box { box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3); }
+.about { 
+    box-shadow: 1px -2px 3px 1px rgba(0,0,0,.3);
+}
+.box {
+    padding: 1% 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5em;
+    color: #141415;
+    min-width: 320px;
+    position: relative;
+}
+
+h2 {
+    /*font-family: Bellefair;*/
+    font-size: 3em;
+    margin: 30px;
+}
+
+/* Header & Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.box {
+    min-width: 342px;
+}
+
+.main-nav ul {
+    padding: 1% 0;
+    width: 90%;
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: center;
+}        
+
+.main-nav ul li {
+    display: inline;
+    margin: 0 16px;
+    text-decoration: none;
+}
+
+.main-nav ul li a {
+    padding: .2em .2em;
+    
+    text-transform: uppercase;
+    text-decoration: none;    
+    font-family: Dosis, sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #141415;
+}
+
+.main-nav ul li a:hover {
+    background: #141415;
+    color: #fff;
+}
+
+/*.main-nav ul li a:active {
+    font-weight: 700;
+}*/
+
+.logo {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Images & Media
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+img { width: 100%; } /* That means 100% of the parent element (container) */
+
+.portfolio {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+    padding-bottom: .7em;
+}
+
+img.avatar {
+    border-radius: 400px;
+    margin: 30px 0;
+}
+
+img:hover { opacity: .8; }
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Social icons */
+
+footer { min-width: 280px; }
+
+ul.social {
+    margin: 5% 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.social li {
+    display: inline;
+    font-size: 1.5em;
+    padding: 0 2%;
+}
+
+ul.social li a {
+    color: #141415;
+}
+
+ul.social li.facebook a:hover {
+    color: rgb(59, 89, 152);
+}
+
+ul.social li.twitter a:hover {
+    color: rgb(0, 172, 237);
+}
+
+ul.social li.instagram a:hover {
+    color: rgb(81, 127, 237);
+}
+
+ul.social li.youtube a:hover {
+    color: rgb(187, 0, 0);
+}
+
+ul.social li.flickr a:hover {
+    color: rgb(255, 0, 132);
+}
+
+ul.social li.linkedin a:hover {
+    color: rgb(0, 123, 182);
+}
+
+/* Copyright */
+
+p.copyright {
+    background: #141415;
+    text-align: center;
+    color: #fff;
+    font-size: .9em;
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*@media (max-width: 504px) {
+    .logo a {font-size: 2em; }
+}*/
+/*
+876 // mudar foto biografia*/
+
+@media (max-width: 630px) {
+    .main-nav ul li { margin: 0 6px; }
+    .main-nav ul li a { text-decoration: underline; }
+    .main-nav ul li a:hover { text-decoration: none; }
+}
+
+@media (max-width: 486px) {
+    .main-nav ul li {
+        display: block;
+    }
+
+    h2 { font-size: 2em; }
+
+    .logo a { font-size: 1.7em; }
+    .main { padding-top: 7%; }
+    .portfolio img { margin-bottom: 5%; }
+    img.avatar { margin-top: 7%; }
+}
+
+@media (max-width: 384px) {
+
+}
+
+@media (max-width: 348px) {
+    p.copyright {
+         /*font-size: .7em;*/
+         background: #fff;
+         color: #000;
+    }
+
+    span.s { display: none; }
+}
+/*@media (max-width: 302px) {
+    .logo a { font-size: 1.5em; }
+}
+
+@media (max-width: 276px) {
+    .logo a {
+        font-size: .6em;
+        border-width: 1px;
+        }
+    img.avatar {
+        margin: 4% 0;
+        padding: 0;
+        text-align: center;
+    }
+    h2 {
+        font-size: 2.4em;
+    }
+}*/
